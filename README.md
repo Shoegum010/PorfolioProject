@@ -63,7 +63,7 @@ root/
 ### Home Page
 
 - Personalized greeting
-- Resume download button
+
 
 ### Profile Page
 
@@ -71,11 +71,11 @@ root/
 
 ### Projects Page
 
-- Grid of personal projects with descriptions and links
+- Grid of personal projects with descriptions.
 
 ### Academics Page
 
-- Timeline of educational background
+- Accordion of educational background
 
 ### 404 Page
 
@@ -86,7 +86,6 @@ root/
 
 - React
 - Material UI
-- Joy UI
 - React Router
 - Redux Toolkit
 - Typewriter-effect
@@ -123,7 +122,7 @@ npm run lint
 Clone the repository:
 
 ```bash
-git clone https://github.com/Shoegum010
+git clone https://github.com/Shoegum010/PorfolioProject
 ```
 
 Navigate to the project directory:

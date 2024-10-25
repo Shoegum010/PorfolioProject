@@ -139,26 +139,28 @@ export default function VerticalTabs() {
        
       </Tabs>
       <TabPanel value={value} index={0}>
-      <Typography  sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}><h1>Portfolio Website</h1></Typography>
-      <Typography><p>  I successfully built a fully responsive portfolio website using React,<br /> 
-      which effectively showcases my diverse range of projects.This interactive platform allows<br />
-      visitors to navigate seamlessly through my work,explore individual projects in detail, and <br />
-      gain a comprehensive understanding of my skills and experiences in web development.Ultimately,<br /> 
-      this portfolio serves as a testament to my dedication to creating visually appealing and user-friendly digital solutions.</p></Typography>
+      <Typography sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}><h1>Portfolio Website</h1></Typography>
+      <Typography sx={{ fontFamily: '"Tourney", cursive',textAlign: 'left',m: '20px',color: '#8271d4',fontSize: '20px',}}><p>  I successfully built a fully responsive portfolio website using React,<br /> 
+      which effectively showcases my diverse range of projects.<br />
+      This interactive platform allows visitors to navigate seamlessly <br />
+      through my work,explore individual projects in detail, and  gain<br /> 
+      a comprehensive understanding of my skills and experiences in web development.<br />
+      Ultimately,this portfolio serves as a testament to my dedication to creating <br />
+      visually appealing and user-friendly digital solutions.</p></Typography>
       </TabPanel>
       
       <TabPanel value={value} index={1}>
       <Typography sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }} ><h1>2D SNAKE GAME</h1></Typography>
-      <Typography><p> I used a Java applet to create a functional snake game,<br />
-      which provides an engaging and interactive experience for players. The game features<br />
-      intuitive controls, challenging gameplay, and a scoring system that keeps players<br />
-      motivated to beat their high scores. Additionally, I implemented various levels of<br />
-      difficulty to enhance the overall gaming experience.</p></Typography>
+      <Typography sx={{ fontFamily: '"Tourney", cursive',textAlign: 'left',m: '20px',color: '#8271d4',fontSize: '20px',}}><p> I used a Java applet to create a functional snake game,<br />
+      which provides an engaging and interactive experience for players.<br />
+      The game features intuitive controls, challenging gameplay, and a <br />
+      scoring system that keeps players motivated to beat their high scores.<br />
+      Making it a fun and playful game while bored.</p></Typography>
       </TabPanel>
       
       <TabPanel value={value} index={2}>
       <Typography  sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}><h1>File Organizer</h1></Typography>
-      <Typography><p>I used C++ to create a terminal application,<br />
+      <Typography  sx={{ fontFamily: '"Tourney", cursive',textAlign: 'left',m: '20px',color: '#8271d4',fontSize: '20px',}}><p>I used C++ to create a terminal application,<br />
       which provides a user-friendly interface for various functionalities. The app<br />
       allows users to perform tasks efficiently, with features such as data input,<br />
       processing, and output display. Additionally, I incorporated error handling<br />
@@ -167,7 +169,7 @@ export default function VerticalTabs() {
       
       <TabPanel value={value} index={3}>
       <Typography  sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}><h1>Task Manager</h1></Typography>
-      <Typography sx={{ fontFamily: '"Tourney", cursive',textAlign: 'left',m: '20px',color: '#DCA47C',}}>
+      <Typography  sx={{ fontFamily: '"Tourney", cursive',textAlign: 'left',m: '20px',color: '#8271d4',fontSize: '20px',}}>
         <p>I created a simple command-line task management tool in C++,<br />
       designed specifically for tracking personal tasks. This tool allows users<br />
       to add, edit, and remove tasks easily, providing a straightforward interface<br />
@@ -177,7 +179,7 @@ export default function VerticalTabs() {
       
       <TabPanel value={value} index={4}>
       <Typography  sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}><h1>Chat Application</h1></Typography>
-      <Typography><p>I created a real-time chat application using Node.js and Socket.io,<br />
+      <Typography  sx={{ fontFamily: '"Tourney", cursive',textAlign: 'left',m: '20px',color: '#8271d4',fontSize: '20px',}}><p>I created a real-time chat application using Node.js and Socket.io,<br />
       designed for seamless messaging between users. The application supports<br />
       features such as private messaging, group chats, and real-time notifications,<br />
       ensuring an engaging communication experience. Additionally, I implemented<br />
@@ -186,7 +188,7 @@ export default function VerticalTabs() {
       
       <TabPanel value={value} index={5}>
       <Typography  sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}><h1>Personal Blog</h1></Typography>
-      <Typography><p>I built a personal blog using Python and Flask,<br />
+      <Typography  sx={{ fontFamily: '"Tourney", cursive',textAlign: 'left',m: '20px',color: '#8271d4',fontSize: '20px',}}><p>I built a personal blog using Python and Flask,<br />
       designed for easy content management and publishing. The blog features<br />
       a user-friendly interface for creating, editing, and deleting posts,<br />
       allowing for seamless updates and organization of content. Additionally,<br />
@@ -195,22 +197,23 @@ export default function VerticalTabs() {
       
       <TabPanel value={value} index={6}>
       <Typography  sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}><h1>Todo List Web App</h1></Typography>
-      <Typography><p>I built a to-do list web app using Python and Flask,<br />
-      designed for easy task management and organization. The app features<br />
-      a user-friendly interface for adding, editing, and deleting tasks,<br />
-      allowing users to keep track of their daily activities effortlessly.<br />
-      Additionally, I implemented task categorization and priority settings to enhance usability.</p></Typography>
+      <Typography  sx={{ fontFamily: '"Tourney", cursive',textAlign: 'left',m: '20px',color: '#8271d4',fontSize: '20px',}}><p>I built a to-do list web app using Python and Flask,<br />
+      designed for easy task management and organization. The app <br />
+      features a user-friendly interface for adding, editing, and<br />
+      deleting tasks, allowing users to keep track of their daily<br />
+      activities effortlessly. Additionally, I implemented task <br />
+      categorization and priority settings to enhance usability.</p></Typography>
       </TabPanel>
       
       <TabPanel value={value} index={7}>
       <Typography  sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}><h1>Stores website</h1></Typography>
-      <Typography><p>I successfully designed and developed a fully responsive store website, leveraging the<br/>
- capabilities of HTML, CSS, and JavaScript. This dynamic platform not only showcases my diverse<br/>
- range of projects but also provides an interactive experience for visitors. With carefully crafted<br/>
- layouts and engaging visuals, users can easily navigate through my work, explore individual projects<br/>
- in depth, and gain a comprehensive understanding of my skills, experiences, and the creative<br/>
- processes behind each piece. Ultimately, this portfolio serves as a testament to my dedication <br/>
- to web development and my ability to create visually appealing and user-friendly digital solutions.</p></Typography>
+      <Typography  sx={{ fontFamily: '"Tourney", cursive',m: '20px',color: '#8271d4',fontSize: '20px',}}><p>
+      I successfully designed and developed a fully responsive store website,<br/>
+      leveraging the capabilities of HTML, CSS, and JavaScript.This dynamic <br/>
+      platform not only showcases my diverse range of projects but also provides<br/>
+      an interactive experience for visitors.Users can easily navigate through my work,<br/>
+      explore individual projects in depth, and gain a comprehensive understanding<br/>
+      of my skills, experiences, and the creative processes behind each piece.</p></Typography>
       </TabPanel>
       
     </Box>
