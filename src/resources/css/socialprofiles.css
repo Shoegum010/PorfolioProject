@@ -1,0 +1,30 @@
+.SPContainer {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #CDE8E5, #94FFD8);
+    margin: 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: 'translateZ(0px)';
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  .speedDial{
+    color: bisque;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adds spacing around the images */
+}
+
+.image-container img {
+    height: 600px;
+    width: 650px; /* Maintain aspect ratio */
+    margin: -90px; /* Reset margin if necessary */
+
+}

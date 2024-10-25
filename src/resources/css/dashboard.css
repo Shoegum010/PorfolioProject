@@ -1,0 +1,67 @@
+/* @import url("./shared_animtion.css"); */
+
+:root{
+    --blueBtn: #8EACCD;
+}
+.activeOpenBtn{
+    background-color: rgb(228, 228, 228);
+    background-color: var(--blueBtn);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    border-radius: 7px 7px 7px 7px;
+    transform: translateX(-2%) scale(0.8);
+}
+
+.activeCloseBtn{
+    background-color: rgb(228, 228, 228);
+    background-color: var(--blueBtn);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    border-radius: 7px 7px 7px 7px;
+    transform: scale(0.8);
+
+}
+
+.MainContainer{
+    background-image: linear-gradient(to bottom, #C4E1F6, #A2D2DF);
+}
+
+.AppBar{
+    background-image: linear-gradient(to bottom, #C4E1F6, #A2D2DF);
+}
+.MainContainer .profile{
+    background-image: linear-gradient(to bottom, #C4E1F6, #A2D2DF);
+}
+
+.sideMenuContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #8EACCD;
+}
+
+.sideFloatClass{
+    opacity: 0;
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    margin-top: 2%;
+    
+}
+
+.sideMenuContainer .sideMenuLinks{
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes slideLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

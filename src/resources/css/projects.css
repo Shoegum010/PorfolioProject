@@ -1,0 +1,10 @@
+.listItem{
+    border: 2px solid rgb(154, 240, 151);
+    background-color:#86D293;
+    border-radius: 10px;
+    color:#31684a;
+}
+
+.listItem :hover{
+    background-color:#6A9C89;
+}
