@@ -14,7 +14,7 @@ This is a portfolio website built using React, Material UI. It showcases persona
 
 ## Project Overview
 
-A portfolio website showcasing projects, social links, and an academic timeline. used redux to maintain state of the bottom navigation, also used localstorage to store the selected in the bottom navigation. Customized all the used MUI and JoyUI components using the sx property. Used Typewriter-effect in the home page. used react router dom for routing the pages. Used Axios to featch data from backend. (only in the PageNotFound page data is featched to understand the concept remaining all the pages use the data from the Constants.js file in the Utils folder)
+This portfolio website highlights projects, social links, an academic timeline, and a gallery. It employs Redux for managing the bottom navigation state and uses local storage to remember the user's selection. All Material-UI components are customized with the sx property. The home and social profile pages feature a typewriter effect for added engagement. Routing is handled by React Router DOM, while Axios is used to fetch data from the backend on the PageNotFound page, serving as a demonstration. Other pages rely on data sourced from the Constants.js file located in the Utils folder.
 
 ## Directory Structure
 
@@ -24,34 +24,44 @@ root/
 ├── public/
 │   ├── index.html
 │   ├── manifest.json
+│   ├── favicon.png
 │   └── robots.txt
 ├── src/
 │   ├── components/
 │   │   ├── Academics.jsx
+│   │   ├── BreadCrumbComponent.jsx   
 │   │   ├── Dashbord.jsx
+│   │   ├── Gallery.jsx
 │   │   ├── Home.jsx
-│   │   ├── PageNotFound.jsx
 │   │   ├── Profile.jsx
-│   │   └── Projects.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Resume.jsx
+│   │   └── SocialProfiles.jsx
 │   ├── redux/
 │   │   ├── slices/
 │   │   │   └── navSlice.js
+│   │   │   └── systemSlice.js
 │   │   └── store.js
 │   ├── resources/
 │   │   ├── css/
 │   │   │   ├── academics.css
+│   │   │   ├── breadcrumb.css
 │   │   │   ├── dashbord.css
 │   │   │   ├── home.css
-│   │   │   ├── profile.css
 │   │   │   ├── projects.css
-│   │   │   └── shared.css
+│   │   │   ├── resume.css
+│   │   │   └── socialprofiles.css
 │   │   └── images/
+│   │       └── gallery/
 │   ├── Utils/
 │   │   └── Constants.js
 │   ├── App.css
 │   ├── App.js
+│   ├── App.test.js
 │   ├── index.css
-│   └── index.js
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
 ├── .gitignore
 ├── package-lock.json
 ├── pakage.json
@@ -64,23 +74,27 @@ root/
 
 - Personalized greeting
 
+### Academics Page
 
-### Profile Page
-
-- Links to social profiles
+- Cards of educational background
 
 ### Projects Page
 
 - Grid of personal projects with descriptions.
 
-### Academics Page
+### Profile Page
 
-- Accordion of educational background
+- Links to social profiles
 
-### 404 Page
+### Resume Page
 
-- Custom error page
-- User data fetch (for learning express)
+- tried to call from backend (some data for learning purpose).
+
+### Gallery Page
+
+- collage of images.
+
+
 
 ## Packages Used
 
