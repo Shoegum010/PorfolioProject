@@ -158,3 +158,7 @@ After installation, run the project locally:
 ```bash
 npm start
 ```
+
+## Acknowledgement
+
+Special thanks to my instructors, Ashik Rai and Gigme Lepcha, for teaching the web development course online. Their guidance has been invaluable in my learning journey.
