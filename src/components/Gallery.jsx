@@ -17,7 +17,7 @@ import su12Image from '../resources/images/gallery/su12.JPG';
 
 export default function TitlebarBelowImageList() {
   return (
-    <ImageList sx={{ width: 1030, height: 450 }}>
+    <ImageList sx={{ width: 1030, height: 470 }}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img

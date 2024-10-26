@@ -1,64 +1,79 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import SpeedDial from '@mui/material/SpeedDial';
-import SpeedDialAction from '@mui/material/SpeedDialAction';
-import Face6Icon from '@mui/icons-material/Face6';
-import InstagramIcon from "@mui/icons-material/Instagram";
+import React from 'react';
+import { Box, Typography, IconButton } from '@mui/material';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import EmailIcon from "@mui/icons-material/Email";
-import { Avatar, Typography } from "@mui/material";
-import bell from '../resources/images/bell.gif';
+import profimage from '../resources/images/profimage.png';
 import "../resources/css/socialprofiles.css";
-const actions = [
-  { icon: <GitHubIcon />, 
-    name: 'GitHub',
-    href:"https://github.com/Shoegum010", 
-    backgroundColor: "#000",
-    target:"_blank"},
-  { icon: <InstagramIcon />, 
-    name: 'Instagram',
-    href:"https://www.instagram.com/_shoegum_",
-    color: "#e1306c",
-    target:"_blank" },
-  { icon: <LinkedInIcon />,
-    name: 'Linkedin',
-    color: "#0077b5",
-    href:"https://www.linkedin.com/in/sugam-rai-477a6b24a/" },
-  { icon: <EmailIcon />,
-    name: 'Mail',
-    color: "primary.main", 
-    href:"https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrkWHwTrBnPTJCpNHPsMlKmDPqQKjpQZDkRXnKbmwXMZLsrqfTWnwflqqkQRStRhRDgxwL",
-    target:"_blank" },
-];
+import Typewriter from 'typewriter-effect';
 
-export default function BasicSpeedDial() {
+
+const SocialProfile = () => {
   return (
-    <Box className='SPContainer'>
-       <Typography  variant="h1" sx={{ color: "#DCA47C",fontFamily: 'Lobster, cursive', }}>Lets Connect </Typography>
-       <div className="image-container">
-        <img src={bell} alt="guitar gif" />
-      </div>
-
-      <SpeedDial className='speedDial'
-        ariaLabel="SpeedDial basic example"
-        sx={{ position: 'absolute', bottom:16 , right: 60 }}
-        icon={<Face6Icon />}
-      >
-
-        {actions.map((action) => (
-          <SpeedDialAction
-            key={action.name}
-            icon={action.icon}
-            href={action.href}
-            backgroundColor={action.backgroundColor}
-            tooltipTitle={action.name}
-          />
-        ))}
-      </SpeedDial>
-       
+      <Box className='SPContainer' sx={{ 
+        display: 'flex', 
+        flexDirection: 'row',  // Change to row for horizontal layout
+        alignItems: 'center', 
+        justifyContent: 'center', // Center the icons horizontally
+        position: 'absolute', 
+        left: 0, 
+        right: 0, 
+        bottom: -10, 
+        gap: 1.5 
+      }}>
+           <Typography  variant="h1" className='text' sx={{color:"#7192d4",fontFamily: 'Dancing Script, cursive',}} >
+       <Typewriter
+          options={{
+              strings: ['Lets', 'Connect....!'],
+              autoStart: true,
+              loop: true,
+                  }}
+        />
+      </Typography>
       
-    </Box>
-   
+      <div className="image-container">
+        <img src={profimage} alt='' />
+      </div>
+          
+          <IconButton
+              component="a"
+              href="https://www.instagram.com/_shoegum_"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: '#E4405F', marginTop: 15 }} // Instagram color
+          >
+              <InstagramIcon sx={{ fontSize: 60 }}/>
+          </IconButton>
+          <IconButton
+              component="a"
+              href="mailto:raisugam974@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: '#EA4335', marginTop: 15 }} // Email color (Google)
+          >
+              <EmailIcon sx={{ fontSize: 60 }}/>
+          </IconButton>
+          <IconButton
+              component="a"
+              href="https://github.com/Shoegum010/PorfolioProject"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: '#333' }} // GitHub color
+          >
+              <GitHubIcon sx={{ fontSize: 60, marginTop: 15 }}/>
+          </IconButton>
+          <IconButton
+                component="a"
+                href="https://www.linkedin.com/in/sugam-rai-477a6b24a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ color: '#0077B5', marginTop: 15 }} // LinkedIn color
+            >
+                <LinkedInIcon sx={{ fontSize: 60 }}/>
+            </IconButton>
+      </Box>
   );
-}
+};
+
+export default SocialProfile;

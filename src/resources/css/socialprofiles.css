@@ -12,19 +12,22 @@
     align-items: center;
   }
   
-  .speedDial{
-    color: bisque;
-  }
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0; /* Adds spacing around the images */
+  .text {
+    
+    position: absolute; /* Position the text absolutely */
+    top: 150px; /* Adjust this value to move it down from the top */
+    left: 550px; /* Adjust this value to move it in from the right */
+    margin: 0; /* Reset margin if necessary */
+}
+.image-container {
+  position: absolute; /* Ensure this container is positioned for absolute children */
+  height: 100vh; /* Set a height for the container if necessary */
 }
 
 .image-container img {
-    height: 600px;
-    width: 650px; /* Maintain aspect ratio */
-    margin: -90px; /* Reset margin if necessary */
-
+  position: absolute; /* Position the image absolutely */
+  top: 90px; /* Align to the bottom */
+  left: 300px; /* Align to the left (adjust as needed) */
+  height: 550px; /* Set your desired height */
+  width: auto; /* Maintain aspect ratio */
 }

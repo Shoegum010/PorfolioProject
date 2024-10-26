@@ -43,8 +43,7 @@ function Home() {
       and technology. Currently pursuing a degree in Computer Science, I am skilled in <b>programming 
       languages</b> such as <b>Java</b>, <b>Python</b>, and <b>JavaScript</b>. I enjoy working
       on collaborative projects and have hands-on experience with web development, 
-      data structures, and algorithms. Eager to apply my knowledge in real-world scenarios 
-      and continuously learn in the ever-evolving tech landscape.
+      data structures, and algorithms. 
 
       </Typography>
      
